@@ -169,7 +169,7 @@
     .dataset-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; border-top: 1px solid var(--strong-line); border-left: 1px solid var(--line); }
     .dataset-meta > div { min-height: 82px; padding: 13px 14px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .dataset-meta dt { color: var(--faint); font: 500 .66rem/1.4 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .07em; }
-    .dataset-meta dd { margin: 7px 0 0; color: var(--text); font-size: 1.05rem; font-weight: 700; letter-spacing: -.02em; }
+    .dataset-meta dd { margin: 7px 0 0; color: var(--text); font-size: 1.05rem; font-weight: 700; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
     .x-follow {
       display: inline-flex;
       align-items: center;
@@ -249,7 +249,7 @@
     .starter-id { display: block; margin-bottom: 9px; color: var(--accent-strong); font: 600 .68rem/1 "IBM Plex Mono", monospace; }
     .starter-title { display: block; font-size: .88rem; line-height: 1.35; font-weight: 650; }
     .controls { padding: 24px 0 20px; position: relative; }
-    .control-row { display: grid; grid-template-columns: minmax(240px, 1.4fr) minmax(170px, .45fr) auto; gap: 12px; }
+    .control-row { display: grid; grid-template-columns: minmax(240px, 1.4fr) minmax(205px, .45fr) auto; gap: 12px; }
     .field { display: block; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     .search-wrap { position: relative; }
@@ -427,7 +427,7 @@
     .receipt-facts dt { color: var(--faint); font: 500 .68rem/1.4 "IBM Plex Mono", monospace; text-transform: uppercase; letter-spacing: .08em; }
     .receipt-facts dd { margin: 0; color: var(--text); font: 600 .76rem/1.4 "IBM Plex Mono", monospace; text-align: right; overflow-wrap: anywhere; }
     .receipt-facts a { color: var(--accent-strong); text-underline-offset: 3px; }
-    .detail h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.9rem); line-height: 1.05; letter-spacing: -.035em; }
+    .detail h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 2.9rem); line-height: 1.05; letter-spacing: -.035em; overflow-wrap: anywhere; }
     .detail-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 18px; }
     .detail-section { padding: 22px 0; border-top: 1px dashed var(--line); }
     .detail-section:first-of-type { margin-top: 30px; }
