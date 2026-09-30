@@ -154,6 +154,7 @@
       color: #07120c;
       background: var(--accent-strong);
     }
+    .typing-line .typing-text { position: relative; }
     .typing-line.typing::after {
       content: "";
       display: inline-block;
@@ -865,13 +866,16 @@
 
         var line = document.createElement("span");
         line.className = "typing-line typing";
+        var lineText = document.createElement("span");
+        lineText.className = "typing-text";
+        line.appendChild(lineText);
         output.textContent = "";
         output.appendChild(line);
 
         var characterIndex = 0;
         function typeCharacter() {
           characterIndex += 1;
-          line.textContent = text.slice(0, characterIndex);
+          lineText.textContent = text.slice(0, characterIndex);
           if (characterIndex < text.length) {
             var typed = text.charAt(characterIndex - 1);
             var delay = typed === " " ? 26 : (/[,.]/.test(typed) ? 210 : 46);
